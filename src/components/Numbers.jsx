@@ -45,7 +45,7 @@ const Numbers = () => {
         <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-10">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col items-center">
-              <h2 className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl text-primary">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-23.75 max-w-5xl text-primary">
                 <Counter end={stat.value} suffix={stat.suffix} />
               </h2>
               <p className="mt-2 text-sm text-primary text-center">

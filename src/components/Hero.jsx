@@ -9,7 +9,7 @@ const Hero = () => {
             <p className='text-xs font-medium'>Trusted by 10+ leading brands</p>
         </div>
 
-        <h1 className='text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl'>Technology and Branding solutions<span className='bg-linear-to-r from-[#8A961D] to-[#D9E368] bg-clip-text text-transparent'> under one roof.</span></h1>
+        <h1 className='text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-23.75 max-w-5xl'>Technology and Branding solutions<span className='bg-linear-to-r from-[#8A961D] to-[#D9E368] bg-clip-text text-transparent'> under one roof.</span></h1>
 
         <p className='text-sm sm:text-lg font-medium text-primary dark:text-white/75 max-w-4/5 sm:max-w-lg pb-3'>Growing businesses through full stack development, data analytics, cloud infrastructure, and branding.<br />StackOn designs, builds, and scales your systems.</p>
 

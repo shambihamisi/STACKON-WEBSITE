@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Numbers from './components/Numbers'
 import AboutUs from './components/AboutUs'
+import Services from './components/Services'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
       <Hero />
       <Numbers />
       <AboutUs />
+      <Services />
     </div>
   )
 }

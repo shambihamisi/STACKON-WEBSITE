@@ -19,7 +19,7 @@ const ThemeToggleBtn = ({theme, setTheme}) => {
 
   return (
     <>
-       <button className='cursor-pointer'>
+       <button id='dark-mode' className='cursor-pointer'>
             {theme === 'dark' ? 
             (<Sun className='size-8.5 p-1.5 text-white rounded-full' onClick={()=> setTheme('light')}/>) : 
             (<Moon className='size-8.5 p-1.5 text-primary dark:text-white  rounded-full' onClick={()=> setTheme('dark')}/>)}

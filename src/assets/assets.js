@@ -7,7 +7,7 @@ import menu_icon from './menu_icon.svg'
 import menu_icon_dark from './menu_icon_dark.svg'
 import sun_icon from './sun_icon.svg'
 import moon_icon from './moon_icon.svg'
-import aboutus_img from './aboutus_img.jpg'
+import aboutus_img from './aboutus_img.svg'
 
 const assets = {
   logo,

@@ -10,7 +10,7 @@ const Navbar = ({theme, setTheme}) => {
 
   return (
     <>
-    <nav className='flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-0.2 sticky top-0 z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70'>
+    <nav className='flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-0.1 sticky top-0 z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70'>
 
         <a href="/" className='cursor-pointer'>
             <img 
@@ -24,7 +24,7 @@ const Navbar = ({theme, setTheme}) => {
             <X className='w-5 absolute right-4 top-4 sm:hidden text-white cursor-pointer' onClick={()=> setSidebarOpen(false)}/>
 
             <a onClick={()=> setSidebarOpen(false)} href="#" className='sm:hover:border-b sm:hover:text-secondary sm:hover:border-secondary'>Home</a>
-            <a onClick={()=> setSidebarOpen(false)} href="#about-us" className='sm:hover:border-b sm:hover:text-secondary sm:hover:border-secondary'>About Us</a>
+            <a onClick={()=> setSidebarOpen(false)} href="#aboutus" className='sm:hover:border-b sm:hover:text-secondary sm:hover:border-secondary'>About Us</a>
             <a onClick={()=> setSidebarOpen(false)} href="#services" className='sm:hover:border-b sm:hover:text-secondary sm:hover:border-secondary'>Services</a>
             <a onClick={()=> setSidebarOpen(false)} href="#portfolio" className='sm:hover:border-b sm:hover:text-secondary sm:hover:border-secondary'>Portfolio</a>
             <a onClick={()=> setSidebarOpen(false)} href="#faqs" className='sm:hover:border-b sm:hover:text-secondary sm:hover:border-secondary'>FAQs</a>
@@ -34,7 +34,7 @@ const Navbar = ({theme, setTheme}) => {
 
             <Menu onClick={()=> setSidebarOpen(true)} className='w-8 sm:hidden text-primary dark:text-white cursor-pointer'/>
 
-            <button className='text-sm max-sm:hidden flex items-center gap-2 bg-secondary text-primary px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all'>
+            <button id='get-quote' className='text-sm max-sm:hidden flex items-center gap-2 bg-secondary text-primary px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all'>
                 <a href="#get-quote">Get Quote</a>
             </button>
 

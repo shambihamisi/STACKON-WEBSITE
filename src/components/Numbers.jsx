@@ -35,20 +35,20 @@ const Counter = ({ end, suffix = "", duration = 1800 }) => {
 
 const Numbers = () => {
   return (
-    <section className="w-full py-20 px-6 sm:px-12 lg:px-24">
+    <section className="max-w-fit mx-auto bg-secondary rounded-3xl overflow-hidden px-4 sm:px-4 md:px-6 lg:px-10 py-8">
       <div className="max-w-6xl mx-auto text-center">
 
-        <p className="text-sm uppercase tracking-[0.25em] text-primary dark:text-white">
+        <h1 className="text-sm uppercase tracking-[0.25em] text-primary">
           Results and Impact
-        </p>
+        </h1>
 
-        <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-10">
+        <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-10">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col items-center">
-              <h3 className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl text-primary dark:text-white">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl text-primary">
                 <Counter end={stat.value} suffix={stat.suffix} />
-              </h3>
-              <p className="mt-2 text-sm text-primary dark:text-white text-center">
+              </h2>
+              <p className="mt-2 text-sm text-primary text-center">
                 {stat.label}
               </p>
             </div>

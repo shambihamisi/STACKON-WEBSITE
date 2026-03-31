@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 const AboutUs = () => {
   return (
-    <section className="w-full py-20 px-6 sm:px-12 lg:px-24">
+    <section id='aboutus' className="w-full py-20 px-6 sm:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
         {/* LEFT */}
@@ -18,7 +18,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <h2 className="mt-3 text-3xl sm:text-4xl font-semibold text-primary dark:text-white leading-tight">
+          <h2 className="mt-3 text-3xl sm:text-4xl font-semibold text-primary dark:text-white tracking-wider leading-tight">
             Implimenting data-driven growth by turning ideas into scalable
             digital systems.
           </h2>
@@ -38,7 +38,7 @@ const AboutUs = () => {
         {/* RIGHT VISUAL */}
         <div className="relative">
 
-          <div className="rounded-3xl overflow-hidden shadow-lg dark:bg-white/5">
+          <div className="rounded-3xl overflow-hidden shadow-lg p-5 bg-[#e7e8f4]">
 
             <img
               src={assets.aboutus_img}

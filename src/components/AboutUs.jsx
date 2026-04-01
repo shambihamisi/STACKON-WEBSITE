@@ -8,7 +8,6 @@ const AboutUs = () => {
     <section id='aboutus' className="w-full py-20 px-6 sm:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
-        {/* LEFT */}
         <div>
 
           <div className="flex items-center">
@@ -35,7 +34,6 @@ const AboutUs = () => {
 
         </div>
 
-        {/* RIGHT VISUAL */}
         <div className="relative">
 
           <div className="rounded-3xl overflow-hidden shadow-lg p-5 bg-[#e7e8f4]">

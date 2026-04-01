@@ -4,6 +4,8 @@ import Hero from './components/Hero'
 import Numbers from './components/Numbers'
 import AboutUs from './components/AboutUs'
 import Services from './components/Services'
+import Portfolio from './components/Portfolio'
+import FAQ from './components/FAQ'
 
 const App = () => {
 
@@ -16,6 +18,8 @@ const App = () => {
       <Numbers />
       <AboutUs />
       <Services />
+      <Portfolio />
+      <FAQ />
     </div>
   )
 }

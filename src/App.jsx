@@ -6,6 +6,9 @@ import AboutUs from './components/AboutUs'
 import Services from './components/Services'
 import Portfolio from './components/Portfolio'
 import FAQ from './components/FAQ'
+import GetQuote from './components/GetQuote'
+import { Toaster } from 'react-hot-toast'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -13,6 +16,7 @@ const App = () => {
 
   return (
     <div className='dark:bg-black relative'>
+      <Toaster />
       <Navbar theme={theme} setTheme={setTheme}/>
       <Hero />
       <Numbers />
@@ -20,6 +24,8 @@ const App = () => {
       <Services />
       <Portfolio />
       <FAQ />
+      <GetQuote />
+      <Footer />
     </div>
   )
 }

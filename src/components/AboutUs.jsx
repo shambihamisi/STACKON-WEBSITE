@@ -28,7 +28,12 @@ const AboutUs = () => {
             structured growth through technology and design.
           </p>
 
-          <a href="#get-quote" className="flex items-center gap-1 border-b w-fit mt-5 text-lg sm:text-xl font-bold text-primary dark:text-white cursor-pointer hover:text-secondary">Talk to us<ArrowRight className="w-5"/>
+          <a 
+          href="mailto:shambi.hamisi@gmail.com"
+          target='blank'
+          rel='noopener noreferrer'
+          aria-label='Email'
+          className="flex items-center gap-1 border-b w-fit mt-5 text-lg sm:text-xl font-bold text-primary dark:text-white cursor-pointer hover:text-secondary hover:translate-x-1">Talk to us<ArrowRight className="w-5"/>
           </a>
             
 

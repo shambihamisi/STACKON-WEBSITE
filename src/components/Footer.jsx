@@ -4,30 +4,29 @@ import assets from "../assets/assets";
 const Footer = () => {
   return (
     <footer className="w-full bg-primary">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="mt-32 grid grid-cols-1 gap-12 py-10 text-sm sm:grid-cols-3 items-start">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6">
+        <div className="mt-32 flex flex-col sm:flex-row sm:justify-between gap-10 py-10 text-sm">
           <div className="flex flex-col items-center text-left">
             <img src={assets.logo_dark} alt="logo" className="w-30 mb-2" />
             <p className="max-w-md text-white">
-                Branding. Technology. Scale.
+                Growth through technology.
             </p>
           </div>
 
-          <div className="flex flex-col items-center">
-            <p className="mb-1 text-xl font-medium text-white">
-              COMPANY
+          <div className="flex flex-col items-start">
+            <p className="mb-1 text-xl font-medium text-secondary">
+              Quick Links
             </p>
-            <ul className="flex flex-col items-center text-white">
-              <li className="cursor-pointer">Home</li>
-              <li className="cursor-pointer">About Us</li>
+            <ul className="flex flex-col items-start text-white gap-2">
+              <li className="cursor-pointer">Blogs</li>
               <li className="cursor-pointer">Privacy Policy</li>
-              <li className="cursor-pointer">Terms & Conditions</li>
+              <li className="cursor-pointer">Terms of service</li>
             </ul>
           </div>
 
-          <div className="flex flex-col items-center ">
-            <p className="mb-1 text-xl font-medium text-white">
-              GET IN TOUCH
+          <div className="flex flex-col items-start gap-2">
+            <p className="mb-1 text-xl font-medium text-secondary">
+              Contact Us
             </p>
 
             <p className="text-white mb-2">+254 729 599 659</p>

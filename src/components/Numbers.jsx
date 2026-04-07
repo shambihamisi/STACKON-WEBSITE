@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "motion/react"
 
 const stats = [
   { value: 35, suffix: "%", label: "Lower Operating Costs" },
@@ -35,7 +36,13 @@ const Counter = ({ end, suffix = "", duration = 1800 }) => {
 
 const Numbers = () => {
   return (
-    <section className="max-w-fit mx-auto bg-secondary rounded-3xl overflow-hidden px-4 sm:px-4 md:px-6 lg:px-10 py-8">
+    <motion.section
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    viewport={{ once: true }}
+
+    className="max-w-fit mx-auto bg-secondary rounded-3xl overflow-hidden px-4 sm:px-4 md:px-6 lg:px-10 py-8">
       <div className="max-w-6xl mx-auto text-center">
 
         <h1 className="text-sm uppercase tracking-[0.25em] text-primary">
@@ -56,7 +63,7 @@ const Numbers = () => {
         </div>
 
       </div>
-    </section>
+    </motion.section>
   );
 };
 

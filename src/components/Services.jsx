@@ -3,6 +3,7 @@ import assets from '../assets/assets'
 import Title from './Title'
 import ServiceCard from './ServiceCard'
 import { Code, ChartNoAxesCombined, CloudCog, Paintbrush } from "lucide-react";
+import { motion } from 'motion/react';
 
 const Services = () => {
 
@@ -30,7 +31,13 @@ const Services = () => {
     ]
 
   return (
-    <section id='services' className='relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-6 text-primary dark:text-white'>
+    <motion.section
+    initial='hidden'
+    whileInView='visible'
+    transition={{ delayChildren: 1.5 }}
+    viewport={{ once: true }}
+
+    id='services' className='relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-6 text-primary dark:text-white'>
 
         <Title title='What do we do?' desc='Stackon ensures return on investment through building and maintainance of technology systems that promote targeted marketing and improve customer retention.'/>
 
@@ -40,7 +47,7 @@ const Services = () => {
             ))}
         </div>
 
-    </section>
+    </motion.section>
   )
 }
 

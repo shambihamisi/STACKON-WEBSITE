@@ -1,12 +1,19 @@
 import React, { useState } from 'react'
 import { ArrowUpRight } from 'lucide-react'
+import { motion } from 'motion/react';
 
-const ServiceCard = ({ service }) => {
+const ServiceCard = ({ service, index }) => {
 
     const Icon = service.icon
 
   return (
-    <div className="group relative flex flex-col justify-between h-full rounded-3xl border border-gray-200 dark:border-white/10 bg-secondary p-6 sm:p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+    <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 1 }}
+    transition={{ duration: 0.5, delay: index * 0.2 }}
+    viewport={{ once: true }}
+
+    className="group relative flex flex-col justify-between h-full rounded-3xl border border-gray-200 dark:border-white/10 bg-secondary p-6 sm:p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
 
       <div>
         <div className="flex items-center justify-between">
@@ -28,7 +35,7 @@ const ServiceCard = ({ service }) => {
         </p>
       </div>
 
-    </div>
+    </motion.div>
   )
 }
 

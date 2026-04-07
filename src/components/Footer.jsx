@@ -1,9 +1,16 @@
 import React from "react";
 import assets from "../assets/assets";
+import { motion } from 'motion/react';
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-primary">
+    <motion.footer
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+
+    className="w-full bg-primary">
       <div className="mx-auto max-w-4xl px-4 sm:px-6">
         <div className="mt-32 flex flex-col sm:flex-row sm:justify-between gap-10 py-10 text-sm">
           <div className="flex flex-col items-center text-left">
@@ -67,7 +74,7 @@ const Footer = () => {
        <div className="border-t border-secondary/20 py-6 text-center text-xs text-secondary">
           © {new Date().getFullYear()} STACKON. All rights reserved.
         </div>
-    </footer>
+    </motion.footer>
   );
 };
 

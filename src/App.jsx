@@ -1,30 +1,45 @@
-import React, { useState } from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Numbers from './components/Numbers'
-import AboutUs from './components/AboutUs'
-import Services from './components/Services'
-import Portfolio from './components/Portfolio'
-import FAQ from './components/FAQ'
-import GetQuote from './components/GetQuote'
+import React, { useState, useEffect } from 'react'
+import { Route, Routes } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
+import Navbar from './components/Navbar'
+import HomePage from './pages/HomePage'
 import Footer from './components/Footer'
+
 
 const App = () => {
 
-  const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light')
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const savedTheme = localStorage.getItem("theme") || "light";
+      setTheme(savedTheme);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("theme", theme);
+
+      if (theme === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    }
+  }, [theme]);
 
   return (
     <div className='dark:bg-black relative'>
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme}/>
-      <Hero />
-      <Numbers />
-      <AboutUs />
-      <Services />
-      <Portfolio />
-      <FAQ />
-      <GetQuote />
+
+      <main>
+        <Routes>
+          <Route path='/' element={<HomePage />}/>
+        </Routes>
+      </main>
+
       <Footer />
     </div>
   )

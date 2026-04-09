@@ -2,39 +2,7 @@ import React, { useState } from 'react'
 import { Plus, Minus } from 'lucide-react'
 import Title from './Title'
 import { motion } from 'motion/react';
-
-const faqData = [
-  {
-    question: 'What services does Stackon offer?',
-    answer:
-      'Stackon offers branding, full-stack development, data analytics, and cloud services for businesses that want structured digital growth.',
-  },
-  {
-    question: 'Who do you work with?',
-    answer:
-      'We work with startups, SMEs, and organizations that need scalable systems, stronger branding, and better digital performance.',
-  },
-  {
-    question: 'Do you build custom websites and web apps?',
-    answer:
-      'Yes. We build custom websites, ecommerce platforms, dashboards, internal systems, and full web applications based on business goals.',
-  },
-  {
-    question: 'Do you offer cloud and DevOps support?',
-    answer:
-      'Yes. We handle deployment, hosting, CI/CD, monitoring, scaling, and infrastructure optimization.',
-  },
-  {
-    question: 'Can you redesign an existing brand or product?',
-    answer:
-      'Yes. We improve existing brands, websites, and systems to increase trust, usability, and business performance.',
-  },
-  {
-    question: 'How do projects usually start?',
-    answer:
-      'Projects usually begin with a discovery session where we understand your goals, challenges, scope, and timeline before proposing the best path forward.',
-  },
-]
+import faqData from '../data/FaqData';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null)
@@ -81,7 +49,10 @@ const FAQ = () => {
                         <button
                         type="button"
                         onClick={() => toggleItem(index)}
-                        className="w-full flex items-center justify-between gap-4 text-left px-6 py-5"
+                        aria-expanded={isOpen}
+                        aria-controls={`faq-answer-${index}`}
+                        id={`faq-question-${index}`}
+                        className="w-full flex items-center justify-between gap-4 text-left px-6 py-5 cursor-pointer"
                         >
                         <span className="text-base sm:text-lg font-medium">
                             {item.question}
@@ -97,6 +68,9 @@ const FAQ = () => {
                         </button>
 
                         <div
+                        id={`faq-answer-${index}`}
+                        role='region'
+                        aria-labelledby={`faq-question-${index}`}
                         className={`grid transition-all duration-300 ease-in-out ${
                             isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
                         }`}

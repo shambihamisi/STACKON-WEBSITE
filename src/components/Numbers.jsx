@@ -37,24 +37,24 @@ const Counter = ({ end, suffix = "", duration = 1800 }) => {
 const Numbers = () => {
   return (
     <motion.section
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6 }}
+    initial='hidden'
+    whileInView='visible'
+    transition={{ delayChildren: 0.2 }}
     viewport={{ once: true }}
 
     className="max-w-fit mx-auto bg-secondary rounded-3xl overflow-hidden px-4 sm:px-4 md:px-6 lg:px-10 py-8">
       <div className="max-w-6xl mx-auto text-center">
 
-        <h1 className="text-sm uppercase tracking-[0.25em] text-primary">
+        <p className="text-sm uppercase tracking-[0.25em] text-primary">
           Results and Impact
-        </h1>
+        </p>
 
         <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-10">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col items-center">
-              <h2 className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-23.75 max-w-5xl text-primary">
+              <p className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-23.75 max-w-5xl text-primary">
                 <Counter end={stat.value} suffix={stat.suffix} />
-              </h2>
+              </p>
               <p className="mt-2 text-sm text-primary text-center">
                 {stat.label}
               </p>

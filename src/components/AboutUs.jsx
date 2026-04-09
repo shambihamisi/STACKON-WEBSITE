@@ -20,7 +20,7 @@ const AboutUs = () => {
           className="flex items-center">
             <BadgeInfo className="text-primary dark:text-white w-4 pr-0.5"/>
             <p className="text-sm tracking-widest text-primary dark:text-white">
-              What is Stackon and Who do we work with
+              What is Stackon and who do we work with
             </p>
           </motion.div>
 
@@ -31,7 +31,7 @@ const AboutUs = () => {
           viewport={{ once: true }}
 
           className="mt-3 text-3xl sm:text-4xl font-semibold text-primary dark:text-white tracking-wider leading-tight">
-            Implimenting data-driven growth by turning ideas into scalable
+            Implementing data-driven growth by turning ideas into scalable
             digital systems.
           </motion.h2>
 
@@ -54,7 +54,7 @@ const AboutUs = () => {
           viewport={{ once: true }}
 
           href="mailto:shambi.hamisi@gmail.com"
-          target='blank'
+          target='_blank'
           rel='noopener noreferrer'
           aria-label='Email'
           className="flex items-center gap-1 border-b w-fit mt-5 text-lg sm:text-xl font-bold text-primary dark:text-white cursor-pointer hover:text-secondary hover:translate-x-1">Talk to us<ArrowRight className="w-5"/>

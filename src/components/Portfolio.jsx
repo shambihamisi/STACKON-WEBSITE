@@ -46,7 +46,7 @@ const Portfolio = () => {
                     key={index} className='flex flex-col h-full transition duration-300 hover:-translate-y-1 cursor-pointer'>
                         <a key={index} href={work.link} target='blank' rel='noopener noreferrer'>
                             <img src={work.image} alt="mockup-image" className='w-full aspect-4/3 overflow-hidden rounded-3xl bg-[#e7e8f4]'/>
-                            <h3 className='mt-3 mb-2 text-lg font-semibold'>{work.title}</h3>
+                            <h4 className='mt-3 mb-2 text-lg font-semibold'>{work.title}</h4>
                             <p className='text-sm opacity-80 grow'>{work.description}</p>
                         </a>
                     </motion.div>

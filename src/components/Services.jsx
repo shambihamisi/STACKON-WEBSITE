@@ -1,5 +1,4 @@
 import React from 'react'
-import assets from '../assets/assets'
 import Title from './Title'
 import ServiceCard from './ServiceCard'
 import { Code, ChartNoAxesCombined, CloudCog, Paintbrush } from "lucide-react";
@@ -15,7 +14,7 @@ const Services = () => {
         },
         {
             title: 'Data Analysis',
-            description: 'Data dashboards and analytics. Visualising raw data into clear insights through dashboards, reporting tools, and automated analytics systems. ',
+            description: 'Data dashboards and analytics. Turning raw business data into clear insights through dashboards, reporting tools, and automated analytics systems that support better decision making. ',
             icon: ChartNoAxesCombined
         },
         {
@@ -39,7 +38,7 @@ const Services = () => {
 
     id='services' className='relative flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-6 text-primary dark:text-white'>
 
-        <Title title='What do we do?' desc='Stackon ensures return on investment through building and maintainance of technology systems that promote targeted marketing and improve customer retention.'/>
+        <Title title='What does Stackon do?' desc='Stackon ensures return on investment through building and maintenance of technology systems that promote targeted marketing and improve customer retention.'/>
 
         <div className='flex flex-col md:grid grid-cols-2 gap-5 cursor-pointer'>
             {servicesData.map((service, index)=> (

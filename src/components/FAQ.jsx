@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Plus, Minus } from 'lucide-react'
 import Title from './Title'
 import { motion } from 'motion/react';
-import faqData from '../data/FaqData';
+import faqData from '../data/faqData';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null)

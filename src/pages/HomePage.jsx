@@ -7,7 +7,7 @@ import Services from "../components/Services";
 import Portfolio from "../components/Portfolio";
 import FAQ from "../components/FAQ";
 import GetQuote from "../components/GetQuote";
-import faqData from "../data/FaqData";
+import faqData from "../data/faqData";
 
 const HomePage = () => {
   const businessSchema = {

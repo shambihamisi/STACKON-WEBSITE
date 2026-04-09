@@ -34,7 +34,7 @@ const App = () => {
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme}/>
 
-      <main>
+      <main id='main-content'>
         <Routes>
           <Route path='/' element={<HomePage />}/>
         </Routes>

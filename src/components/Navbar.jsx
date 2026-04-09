@@ -39,7 +39,7 @@ const Navbar = ({theme, setTheme}) => {
                 <Menu onClick={()=> setSidebarOpen(true)} className='w-8 sm:hidden text-primary dark:text-white cursor-pointer'/>
 
                 <button id='get-quote' className='text-sm max-sm:hidden flex items-center gap-2 bg-secondary text-primary px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all'>
-                    <a href="mailto:shambi.hamisi@gmail.com" target='blank' rel='noopener noreferrer' aria-label='Email'>Get Quote</a>
+                    <a href="mailto:shambi.hamisi@gmail.com" target='_blank' rel='noopener noreferrer' aria-label='send-email'>Get Quote</a>
                 </button>
 
                 <ThemeToggleBtn theme={theme} setTheme={setTheme}/>

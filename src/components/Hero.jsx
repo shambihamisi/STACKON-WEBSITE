@@ -39,7 +39,7 @@ const Hero = () => {
         viewport={{ once: true }}
 
         className='relative rounded-2xl overflow-hidden shadow-lg'>
-            <img src={assets.hero_img} alt="hero-image" className='w-full max-w-6xl' width='1264' height='742' loading='eager'/>
+            <img src={assets.hero_img} alt="hero-image" className='w-full max-w-6xl' width='1264' height='742' loading='eager' fetchPriority='high'/>
         </motion.div>
 
     </section>

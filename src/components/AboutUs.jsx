@@ -77,6 +77,7 @@ const AboutUs = () => {
               src={assets.aboutus_img}
               alt="about visual"
               className="rounded-3xl w-full object-cover"
+              loading="lazy"
             />
 
           </motion.div>

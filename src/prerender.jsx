@@ -8,13 +8,11 @@ export async function prerender() {
   const helmetContext = {};
 
   const html = renderToString(
-    <React.StrictMode>
       <HelmetProvider context={helmetContext}>
         <MemoryRouter initialEntries={['/']}>
           <App />
         </MemoryRouter>
       </HelmetProvider>
-    </React.StrictMode>
   );
 
   const { helmet } = helmetContext;

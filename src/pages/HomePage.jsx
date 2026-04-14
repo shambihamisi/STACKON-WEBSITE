@@ -50,14 +50,13 @@ const HomePage = () => {
         <meta name="keywords" content="web development Kenya, branding Kenya, data analytics Kenya, cloud services Kenya" />
 
         <meta name="robots" content="index, follow"/>
-        <link rel="canonical" href="ttps://stackon-website.vercel.app/" />
+        <link rel="canonical" href="https://stackon-website.vercel.app/" />
         
         <meta property="og:title" content="StackOn Technologies - Website Development, Data Analytics, Cloud Services and Branding Company in Kenya" />
         <meta property="og:description" content="Stackon provides full stack development, data analytics, cloud services, and branding services in Kenya. Build scalable systems for your business." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://stackon-website.vercel.app/" />
 
-        <link rel="canonical" href="https://stackon-website.vercel.app/" />
         <script type="application/ld+json">
           {JSON.stringify(businessSchema)}
         </script>

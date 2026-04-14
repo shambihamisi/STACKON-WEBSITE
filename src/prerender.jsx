@@ -4,12 +4,12 @@ import { MemoryRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App.jsx";
 
-export async function prerender() {
+export async function prerender(data) {
   const helmetContext = {};
 
   const html = renderToString(
       <HelmetProvider context={helmetContext}>
-        <MemoryRouter initialEntries={['/']}>
+        <MemoryRouter initialEntries={[data.url]}>
           <App />
         </MemoryRouter>
       </HelmetProvider>

@@ -12,6 +12,7 @@ const Counter = ({ end, suffix = "", duration = 1800 }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
+    let frameId;
     const startTime = performance.now();
 
     const animate = (time) => {
@@ -20,10 +21,16 @@ const Counter = ({ end, suffix = "", duration = 1800 }) => {
 
       setCount(Number.isInteger(end) ? Math.floor(value) : value.toFixed(1));
 
-      if (progress < 1) requestAnimationFrame(animate);
+      if (progress < 1) {
+        frameId = requestAnimationFrame(animate);
+      }
     };
 
-    requestAnimationFrame(animate);
+    frameId = requestAnimationFrame(animate);
+
+    return () => {
+      if (frameId) cancelAnimationFrame(frameId);
+    };
   }, [end, duration]);
 
   return (

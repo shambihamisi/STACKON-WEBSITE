@@ -13,6 +13,7 @@ export default defineConfig({
     vitePrerenderPlugin({
       renderTarget: '#root',
       prerenderScript: fileURLToPath(new URL('./src/prerender.jsx', import.meta.url)),
+      additionalPrerenderRoutes: ["/"],
     }),
   ],
 })

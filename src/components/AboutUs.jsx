@@ -75,7 +75,7 @@ const AboutUs = () => {
 
             <img
               src={assets.aboutus_img}
-              alt="about visual"
+              alt="StackOn team and technology services illustration"
               className="rounded-3xl w-full object-cover"
               loading="lazy"
             />

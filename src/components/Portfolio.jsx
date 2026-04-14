@@ -9,12 +9,14 @@ const Portfolio = () => {
         {
             title:'Branding redesign',
             description:'Complete brand identity redesign that improved visual consistency, increased customer trust, and drove a 25% rise in conversion rates.',
-            image: assets.branding_mockup
+            image: assets.branding_mockup,
+            link: 'https://cosmetics-ecommerce-three.vercel.app/'
         },
         {
             title:'Data dashboard',
             description:'Real-time analytics dashboard that reduced reporting time by over 80% and enabled faster, data-driven decision making across the business.',
-            image: assets.dashboard_mockup
+            image: assets.dashboard_mockup,
+            link: 'https://cosmetics-ecommerce-three.vercel.app/'
         },
         {
             title:'E-Commerce website',
@@ -44,7 +46,7 @@ const Portfolio = () => {
                     viewport={{ once: true }}
 
                     key={index} className='flex flex-col h-full transition duration-300 hover:-translate-y-1 cursor-pointer'>
-                        <a key={index} href={work.link} target='blank' rel='noopener noreferrer'>
+                        <a key={index} href={work.link} target='_blank' rel='noopener noreferrer'>
                             <img src={work.image} alt="mockup-image" className='w-full aspect-4/3 overflow-hidden rounded-3xl bg-[#e7e8f4]' loading='lazy' width='400' height='300'/>
                             <h4 className='mt-3 mb-2 text-lg font-semibold'>{work.title}</h4>
                             <p className='text-sm opacity-80 grow'>{work.description}</p>
